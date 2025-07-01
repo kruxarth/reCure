@@ -1,4 +1,3 @@
-// src/components/DocCard.jsx
 import React from "react";
 
 const Doccard = ({ data }) => {

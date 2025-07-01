@@ -40,12 +40,12 @@ const Signup = () => {
       }
     }
 
-    // Save to smartcareUsers[] array
+  
     const users = JSON.parse(localStorage.getItem("smartcareUsers")) || [];
     users.push(form);
     localStorage.setItem("smartcareUsers", JSON.stringify(users));
 
-    // Set current session user
+    
     localStorage.setItem("smartcareUser", JSON.stringify(form));
 
     alert("Signup successful!");

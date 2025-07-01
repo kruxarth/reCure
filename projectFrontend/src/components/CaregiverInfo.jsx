@@ -1,4 +1,3 @@
-// src/components/CaregiverInfoCard.jsx
 import React from "react";
 
 const CaregiverInfo = ({ data }) => {

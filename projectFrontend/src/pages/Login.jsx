@@ -24,7 +24,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex">
-      {/* Left branding */}
+      
       <div className="hidden md:flex w-1/2 bg-blue-100 items-center justify-center p-10">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-blue-700 mb-4">
@@ -36,7 +36,7 @@ const Login = () => {
         </div>
       </div>
 
-      {/* Right login form */}
+    
       <div className="w-full md:w-1/2 flex items-center justify-center bg-white">
         <form
           onSubmit={handleLogin}
