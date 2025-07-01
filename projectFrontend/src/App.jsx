@@ -1,12 +1,20 @@
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import { ChatWithUs } from './components';
 
 function App() {
- 
   return (
-    <>
-       <h1 className='text-center text-3xl p-4 my-3 bg-orange-400 text-white'>Welcome!!</h1>
-    </>
-  )
+    <Router>
+      <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/chat" element={<ChatWithUs />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
