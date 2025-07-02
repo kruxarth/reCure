@@ -5,7 +5,6 @@ const PatientProfile = ({ data }) => {
     name: data?.name || "Prabhat Jha",
     age: data?.age || 20,
     condition: "Post Hospital Recovery",
-    room: "-",
     admissionDate: data?.dischargeDate || "June 25, 2025",
     profilePic: "https://via.placeholder.com/80",
   };
@@ -26,7 +25,6 @@ const PatientProfile = ({ data }) => {
       <div className="mt-4 text-sm text-gray-700">
         <p><span className="font-medium">Age:</span> {patient.age}</p>
         <p><span className="font-medium">Recovery Start Date:</span> {patient.admissionDate}</p>
-        <p><span className="font-medium">Room:</span> {patient.room}</p>
       </div>
     </div>
   );
